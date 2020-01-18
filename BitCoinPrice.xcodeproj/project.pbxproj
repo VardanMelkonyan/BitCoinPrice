@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA47C1AF23D39C7C00302576 /* PriceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA47C1AE23D39C7C00302576 /* PriceManager.swift */; };
+		CA47C1B123D3A17700302576 /* PriceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA47C1B023D3A17700302576 /* PriceModel.swift */; };
+		CA47C1B323D3A19B00302576 /* PriceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA47C1B223D3A19B00302576 /* PriceData.swift */; };
 		CADA0A5323D2508A003E0636 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA0A5223D2508A003E0636 /* AppDelegate.swift */; };
 		CADA0A5523D2508A003E0636 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA0A5423D2508A003E0636 /* SceneDelegate.swift */; };
 		CADA0A5723D2508A003E0636 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA0A5623D2508A003E0636 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA47C1AE23D39C7C00302576 /* PriceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceManager.swift; sourceTree = "<group>"; };
+		CA47C1B023D3A17700302576 /* PriceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceModel.swift; sourceTree = "<group>"; };
+		CA47C1B223D3A19B00302576 /* PriceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceData.swift; sourceTree = "<group>"; };
 		CADA0A4F23D2508A003E0636 /* BitCoinPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitCoinPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CADA0A5223D2508A003E0636 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CADA0A5423D2508A003E0636 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA47C1AB23D3956100302576 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CADA0A5623D2508A003E0636 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CA47C1AC23D3957E00302576 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CADA0A5823D2508A003E0636 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA47C1AD23D3959800302576 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA47C1AE23D39C7C00302576 /* PriceManager.swift */,
+				CA47C1B023D3A17700302576 /* PriceModel.swift */,
+				CA47C1B223D3A19B00302576 /* PriceData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CADA0A4623D2508A003E0636 = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +90,9 @@
 			children = (
 				CADA0A5223D2508A003E0636 /* AppDelegate.swift */,
 				CADA0A5423D2508A003E0636 /* SceneDelegate.swift */,
-				CADA0A5623D2508A003E0636 /* ViewController.swift */,
-				CADA0A5823D2508A003E0636 /* Main.storyboard */,
+				CA47C1AD23D3959800302576 /* Model */,
+				CA47C1AC23D3957E00302576 /* View */,
+				CA47C1AB23D3956100302576 /* Controller */,
 				CADA0A5B23D25090003E0636 /* Assets.xcassets */,
 				CADA0A5D23D25090003E0636 /* LaunchScreen.storyboard */,
 				CADA0A6023D25090003E0636 /* Info.plist */,
@@ -139,8 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CADA0A5723D2508A003E0636 /* ViewController.swift in Sources */,
+				CA47C1B323D3A19B00302576 /* PriceData.swift in Sources */,
 				CADA0A5323D2508A003E0636 /* AppDelegate.swift in Sources */,
 				CADA0A5523D2508A003E0636 /* SceneDelegate.swift in Sources */,
+				CA47C1AF23D39C7C00302576 /* PriceManager.swift in Sources */,
+				CA47C1B123D3A17700302576 /* PriceModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
