@@ -10,10 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
  
-    
-    
     var curencyOpthion = [String]()
-    var pickerResult : String? = String()
     
     @IBOutlet weak var curencyPickerView: UIPickerView!
     @IBOutlet weak var priceLabel: UILabel!
@@ -43,7 +40,6 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         priceManager.preformRequest()
-        pickerResult = curencyOpthion[row]
         
         return curencyOpthion[row]
     }
@@ -51,14 +47,16 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
 }
 
 extension ViewController: PriceManagerDelegate{
-    
-    func didUpdatePrice( _ price: PriceModel) {
-        print("Hi")
-    }
+
     
     func didFailWithError(_ error: Error) {
         print(error)
     }
     
     
+}
+extension PriceManagerDelegate{
+    func didUpdatePrice( _ price: PriceModel) {
+        print("Hi")
+    }
 }
